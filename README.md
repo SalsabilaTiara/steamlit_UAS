@@ -2,7 +2,7 @@
 This repo contains a simple [streamlit](https://streamlit.io) app that shows interactive plots of some statistics about the production of crude oil in some country. The main data contains region codes and total productions of crude oil per year.
 
 ## Check the live app
-Check out the live app [here](https://share.streamlit.io/nurahmadi/streamlit_demo/main/transjakarta.py). This demo is hosted with Streamlit sharing, check streamlit.io/sharing for more info.
+Check out the live app [here](https://share.streamlit.io/salsabilatiara/steamlit_uas/main/ProduksiMinyak.py). This demo is hosted with Streamlit sharing, check streamlit.io/sharing for more info.
 
 ## Run the app locally
 ### Install streamlit via pip
@@ -15,7 +15,7 @@ conda install -c conda-forge streamlit
 ```
 ### Run
 ```
-streamlit run https://raw.githubusercontent.com/nurahmadi/streamlit_demo/main/transjakarta.py
+streamlit run https://raw.githubusercontent.com/salsabilatiara/steamlit_uas/main/ProduksiMinyak.py
 ```
 ## Required packages
 - Streamlit
