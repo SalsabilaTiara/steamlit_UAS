@@ -101,9 +101,9 @@ for labels in ax.containers:
 plt.tight_layout()
 
 col3.pyplot(fig)
-############### lower left column ###############
+############### lower left column (3) ###############
 
-############### lowe right column ###############
+############### lower right column (4) ###############
 col4.subheader(f"Grafik jumlah produksi minyak mentah terbesar pada {tahun}")
 
 produksi_tahun =[]
@@ -130,9 +130,9 @@ for labels in ax.containers:
 plt.tight_layout()
 
 col4.pyplot(fig)
-############### upper right column ###############
+############### lower right column (4) ###############
 
-############### loowerer left column ###############
+############### loowerer left column (5) ###############
 col5, col6 = st.columns(2)
 col5.subheader(f"Summary produksi minyak mentah terbesar pada {tahun}")
 
@@ -158,9 +158,9 @@ col5.markdown(f"Region: {regionmax}")
 col5.markdown(f"Sub-region: {subregionmax}")
 col5.markdown(f"Produksi tahun {tahun}: {max_value}")
 col5.markdown(f"Produksi Kumulatif Negara: {kumulatifmax}")
-############### loowerer left column ###############
+############### loowerer left column (5)###############
 
-############### loowerer right column ###############
+############### loowerer right column (6)###############
 col6.subheader(f"Summary produksi minyak mentah terkecil pada {tahun}")
 prodtahun = df.loc[df['tahun'] == tahun]
 min_value = prodtahun[prodtahun['produksi']> .0001]['produksi'].min()
@@ -181,9 +181,9 @@ col6.markdown(f"Region: {regionmin}")
 col6.markdown(f"Sub-region: {subregionmin}")
 col6.markdown(f"Produksi tahun {tahun}: {min_value}")
 col6.markdown(f"Produksi Kumulatif Negara: {kumulatifmin}")
-############### loowerer right column ###############
+############### loowerer right column (6) ###############
 
-############### more loowerer left column ###############
+############### more loowerer left column (7) ###############
 col7, col8 = st.columns(2)
 col7.subheader(f"Summary produksi minyak mentah sama dengan 0 pada {tahun}")
 
@@ -204,9 +204,9 @@ datanegara0['kumulatif produksi'] = kumulatifnegara0
 datanegara0.rename(columns={'name':'negara','alpha-3':'kode Negara'}, inplace=True)
 
 col7.dataframe(datanegara0.head(len(kumulatifnegara0)))
-############### more loowerer left column ###############
+############### more loowerer left column (7)###############
 
-############### more loowerer right column ###############
+############### more loowerer right column (8)###############
 col8.subheader(f"Grafik produksi minyak mentah kumulatif negara yang pada {tahun} sama dengan 0")
 kumulatif0 = datanegara0[datanegara0['kumulatif produksi']>.001]['kumulatif produksi'].tolist()
 kumulatifga0 = datanegara0[datanegara0['kumulatif produksi'].isin(kumulatif0)]
@@ -224,4 +224,4 @@ ax.axis('equal')
 ax.legend(patches, negarayg0 , loc="center left", bbox_to_anchor=(1, 0.5))
 plt.tight_layout()
 col8.pyplot(fig)
-############### more loowerer right column ###############
+############### more loowerer right column (8) ###############
