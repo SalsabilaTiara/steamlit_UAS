@@ -4,12 +4,9 @@
 from os import name
 import pandas as pd
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib import cm
-from pandas.core.indexes.base import Index
 import streamlit as st
-import matplotlib.ticker as mticker
 from PIL import Image
 import json
 
