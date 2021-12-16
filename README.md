@@ -15,7 +15,7 @@ conda install -c conda-forge streamlit
 ```
 ### Run
 ```
-streamlit run https://raw.githubusercontent.com/salsabilatiara/steamlit_uas/main/ProduksiMinyak.py
+https://raw.githubusercontent.com/salsabilatiara/steamlit_uas/main/ProduksiMinyak.py
 ```
 ## Required packages
 - Streamlit
