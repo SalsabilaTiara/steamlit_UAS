@@ -39,7 +39,7 @@ list_tahun = list(range(1971,2016))
 
 negara = st.sidebar.selectbox("Pilih negara:", list_negara)
 tahun = st.sidebar.selectbox("Pilih tahun:", list_tahun)
-B_besar = st.sidebar.slider("Banyak negara:", min_value=1, max_value=137, value=10)
+B_besar = st.sidebar.slider("Banyak negara:", min_value=1, max_value=len(list_negara), value=10)
 ############### sidebar ###############
 
 ############### upper left column (1) ###############
